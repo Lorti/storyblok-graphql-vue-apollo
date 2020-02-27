@@ -42,7 +42,7 @@ import App from './App.vue';
 const apolloClient = new ApolloClient({
   uri: 'https://gapi.storyblok.com/v1/api',
   headers: {
-    token: 'WDkGgfwKuvctflMZTbjhNQtt',
+    token: 'YOUR_TOKEN',
     version: 'draft',
   },
 });
@@ -70,7 +70,7 @@ For every content type Storyblok generates two fields.
 
 So if you have created a content type with the name `page` you will have the fields `PageItem` and `PageItems` in GraphQL.
 
-To get the documented schema definition of your content type you can use theGraphQL playground. Exchange the token (YOUR_TOKEN) with your “Preview” token and open the link `http://gapi-browser.storyblok.com/?token=YOUR_TOKEN`.
+To get the documented schema definition of your content type you can use theGraphQL playground. Exchange `YOUR_TOKEN` with your “preview” token and open the link `http://gapi-browser.storyblok.com/?token=YOUR_TOKEN`.
 
 In the following example we query the `home` content item and output the page name in `src/App.vue`.
 
@@ -281,7 +281,7 @@ First add the Javascript bridge to the file `public/index.html` and replace `YOU
   </head>
   <body>
     <div id="app"></div>
-    <script type="text/javascript" src="//app.storyblok.com/f/storyblok-latest.js?t=WDkGgfwKuvctflMZTbjhNQtt"></script>
+    <script type="text/javascript" src="//app.storyblok.com/f/storyblok-latest.js?t=YOUR_TOKEN"></script>
     <!-- built files will be auto injected -->
   </body>
 </html>

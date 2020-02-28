@@ -240,7 +240,7 @@ import App from './App.vue';
 const apolloClient = new ApolloClient({
   uri: 'https://gapi.storyblok.com/v1/api',
   headers: {
-    token: 'WDkGgfwKuvctflMZTbjhNQtt',
+    token: 'YOUR_TOKEN',
     version: 'draft',
   },
 });
@@ -264,7 +264,7 @@ new Vue({
 
 At the end (with some CSS added) you should have the following result when opening your app in the browser:
 
-[](storyblok-rendering.png)
+[](https://raw.githubusercontent.com/Lorti/storyblok-graphql-vue-apollo/master/storyblok-rendering.png)
 
 ## How to add Storyblok’s Visual Editor
 
